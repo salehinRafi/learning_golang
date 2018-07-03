@@ -5,6 +5,7 @@ import "fmt"
 // DataType : Data Types in GO
 func DataType() {
 
+	// Boolean types
 	/* Data Type: bool
 	 * Booleans can be either true or false
 	 */

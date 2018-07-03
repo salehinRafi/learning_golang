@@ -7,4 +7,6 @@ func main() {
 	DataType()
 	fmt.Println("------Variable Sections------")
 	Variable()
+	fmt.Println("------ Sections------")
+	Operator()
 }
