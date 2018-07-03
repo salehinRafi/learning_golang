@@ -2,6 +2,7 @@ package main
 
 func main() {
 
+	Intro()
 	Array()
 	Function()
 	Structure()
