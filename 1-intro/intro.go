@@ -19,7 +19,7 @@ func main() {
 	//The Println function of the fmt package is used to write text to the standard string output, which
 	// is surrounded by double quotes and a newline to the screen
 	fmt.Println("Hello World")
-
+	fmtPackage()
 	// You can get a description of a function by typing `godoc fmt Println`
 	// for example in the terminal
 }
