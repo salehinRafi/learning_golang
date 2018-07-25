@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"runtime"
 )
 
@@ -17,6 +18,15 @@ func Conditional() {
 	} else {
 		fmt.Println("You Can't Drive")
 	}
+
+	// If with a short statement
+	var lim float64 = 10
+	if v := math.Pow(2, 3); v < lim {
+		fmt.Printf("%g\n", v)
+	} else {
+		fmt.Printf("%g >= %g\n", v, lim)
+	}
+	// can't use v here, though
 
 	// Else-If Statement
 
