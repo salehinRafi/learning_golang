@@ -4,8 +4,8 @@
 Multiline Comment
 */
 
-// Every Go program starts with a package declaration which provides a way for
-// use to reuse code
+// Every Go program is made up of packages. Programs start running in package main.
+// Every Go program starts with a package declaration which provides a way for use to reuse code
 package main
 
 // import allows use to use code from other packages

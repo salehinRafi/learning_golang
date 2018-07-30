@@ -47,9 +47,9 @@ func fmtPackage() {
 	fmt.Println(s2)
 
 	hellomsg := `
- "Hello" in Chinese is 你好 ('Ni Hao')
- "Hello" in Hindi is नमस्ते ('Namaste')
-` // multi-line string literal, using back-tick at beginning and end
+ 	"Hello" in Chinese is 你好 ('Ni Hao')
+ 	"Hello" in Hindi is नमस्ते ('Namaste')
+	` // multi-line string literal, using back-tick at beginning and end
 
 	fmt.Println(hellomsg)
 }
