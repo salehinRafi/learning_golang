@@ -8,12 +8,15 @@ func Loops() {
 	for i := 1; i < 2; i++ {
 		fmt.Println("Loop")
 	}
+	// Can act as a while loop. you can omit semicolons if there is only a condition or as a for loop without pre/post statements
 	j := 1
-	for j < 2 { // while - loop. you can omit semicolons if there is only a condition
+	for j < 2 {
 		fmt.Println("while-loop")
 		break
 	}
-	for { // you can omit the condition ~ while (true)
+
+	// infinity loop - you can omit the condition ~ while (true)
+	for {
 		fmt.Println("Without condition ")
 		break
 	}
@@ -36,7 +39,7 @@ func Loops() {
 	*/
 
 	// continue control
-	var a int = 8
+	var a = 8
 
 	for a < 10 {
 		if a == 15 {
@@ -49,7 +52,7 @@ func Loops() {
 	}
 
 	// goto
-	var c int = 5
+	var c = 5
 
 LOOP:
 	for c < 10 {
