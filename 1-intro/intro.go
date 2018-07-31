@@ -6,6 +6,11 @@ Multiline Comment
 
 // Every Go program is made up of packages. Programs start running in package main.
 // Every Go program starts with a package declaration which provides a way for use to reuse code
+// Package declaration at top of every source file
+// All Executable are in package `main`
+// Convention: package name == last name of import path (import path `math/rand` => package `rand`)
+// Upper case identifier: exported (visible from other packages)
+// Lower case identifier: private (not visible from other packages)
 package main
 
 // import allows use to use code from other packages
