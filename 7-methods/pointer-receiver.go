@@ -45,10 +45,11 @@ func PointerReceiver() {
 
 	// 1st reason example
 	u := &User{"Salehin", "Rafi"}
-	fmt.Println("1st-reason: ", u.Greeting())
+
+	fmt.Println("1st-reason: ", u.Greeting()) // Call the method Greeting for User
 
 	// 2nd reason example
 	v := &VertexPointer{3, 4}
-	v.Scale(5)
-	fmt.Println("2nd-reason", v, v.Abs())
+	v.Scale(5)                            // Call the method Scale for VertexPointer to modify value
+	fmt.Println("2nd-reason", v, v.Abs()) // Call the method Abs() for VertexPointer
 }
