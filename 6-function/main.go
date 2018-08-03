@@ -7,8 +7,12 @@ func main() {
 
 	fmt.Println("------Basic Function Sections------")
 	Function()
+	fmt.Println("------Recursion Sections------")
+	Recursion()
 	fmt.Println("------Function As A Closure Sections------")
 	Closure()
+	fmt.Println("------Variadic Function Sections------")
+	VariadicFunction()
 	fmt.Println("------Error Control Sections------")
 	ErrorControl()
 }

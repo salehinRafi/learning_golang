@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func variadFunction() {
+func VariadicFunction() {
 	// the function which accepts a variable number of arguments.
 
 	fmt.Println(adder(1, 2, 3)) // 6
