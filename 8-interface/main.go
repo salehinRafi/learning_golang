@@ -16,6 +16,12 @@ func main() {
 
 	fmt.Println("------Interface Implicit Sections------")
 	Implicit()
+
+	/*
+		Go programming provides a pretty simple error handling framework with inbuilt error interface type of the following declaration.
+	*/
+	fmt.Println("------Error Handling Interface Sections------")
+	ErrorHandling()
 }
 
 /**
