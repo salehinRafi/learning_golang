@@ -16,7 +16,7 @@ func GoSelect() {
 	boom := time.After(500 * time.Millisecond)
 	for {
 		// use `select` to await both of these values simultaneously, printing each one as it arrives.
-		select { 
+		select {
 		case <-tick:
 			fmt.Println("tick.")
 		case <-boom:

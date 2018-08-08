@@ -16,10 +16,22 @@ func main() {
 	Goroutines()
 
 	fmt.Println("------Channel Sections------")
-	GoChannel()
+	Channel()
 
-	fmt.Println("------Range & Close Sections------")
-	GoRangeClose()
+	fmt.Println("------Channel Buffering Sections------")
+	ChannelBuffering()
+
+	fmt.Println("------Channel Synchronization Sections------")
+	ChannelSynchronization()
+
+	fmt.Println("------Channel Direction Sections------")
+	ChannelDirection()
+
+	fmt.Println("------Closing Channel Sections------")
+	ClosingChannel()
+
+	fmt.Println("------Range Over Channel Sections------")
+	RangeOverChannel()
 
 	fmt.Println("------Select Sections------")
 	GoSelect()
