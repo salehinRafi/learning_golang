@@ -30,7 +30,7 @@ func Slices() {
 	g := append(a, b...) // concatenate two slices a and b using ellipsis `...`
 	fmt.Println("concatenate slices a and b", g)
 
-	// create a slice with make
+	// create a slice with `make` before use
 	// make function allocates a zeroed array and returns a slice that refers to that array.
 	var h = make([]byte, 5, 5) // first arg length, second capacity
 	fmt.Println("first arg length, second capacity:", h)
