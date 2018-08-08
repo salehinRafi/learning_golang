@@ -9,6 +9,7 @@ func Variable() {
 
 	// Variables are statically typed, which means their type can't change (immutable).
 	// Variable names must start with a letter and may contain letters, numbers or the _
+	// `var` statement can be at package or function level
 
 	// declaration without initialization
 	var a int
