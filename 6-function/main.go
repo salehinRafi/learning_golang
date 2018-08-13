@@ -13,6 +13,8 @@ func main() {
 	Closure()
 	fmt.Println("------Variadic Function Sections------")
 	VariadicFunction()
+	fmt.Println("------Deferred Function Sections------")
+	Deferred()
 	fmt.Println("------Error Control Sections------")
 	ErrorControl()
 }
