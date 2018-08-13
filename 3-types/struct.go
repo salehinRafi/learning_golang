@@ -8,9 +8,14 @@ import "fmt"
 // BUT only exported fields (capitalized) can be accessed from outside of a package.
 
 // Defining
-type Person struct {
-	name string
+type person struct {
+	name string // lower case field, thus name is not accessible from outside a package.
 	age  int
+}
+
+type secretAgent struct {
+	person
+	licenseToKill bool
 }
 
 //A struct literal sets a newly allocated struct value by listing the values of its fields.
@@ -18,10 +23,18 @@ type Person struct {
 
 // “initialize” a variable containing a struct or a reference by create a struct literals:
 var (
-	p = Person{name: "Salehin Rafi", age: 1} // has type Person
-	q = &Person{"Salehin Rafi", 1}           // has type *Person
-	r = Person{name: "Salehin Rafi"}         // age:0 is implicit
-	s = Person{}                             // name:0 and age:0
+	p = person{name: "Salehin Rafi", age: 1} // has type person
+	q = &person{"Salehin Rafi", 1}           // has type *person
+	r = person{name: "Salehin Rafi"}         // age:0 is implicit
+	s = person{}                             // name:0 and age:0
+
+	sa1 = secretAgent{ //  has type of secretAgent with person field and licenseToKill
+		person{
+			"Salehin",
+			26,
+		},
+		true,
+	}
 )
 
 // Struct : A struct is a collection of fields.
@@ -40,6 +53,6 @@ func Struct() {
 	//Common way to “initialize” a variable containing a struct or a reference to one, is to create a struct literal.
 	//Another option is to create a constructor
 	// use new expression to allocate a zeroed value of the requested type and to return a pointer to it.
-	x := new(Person)
+	x := new(person)
 	fmt.Println(*x)
 }
