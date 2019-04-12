@@ -42,4 +42,5 @@ Important:
 	- Packages in Go are organized into folders, with one package per folder. 
 	- Go has no concept of subpackages, which means 
 		nested packages (in nested folders) exist only for aesthetic or informational reasons but do not inherit any functionality or visibility from super packages.
+	- Good practice to have the folder name match the package name.
 */
