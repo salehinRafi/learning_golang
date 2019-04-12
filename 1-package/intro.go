@@ -37,4 +37,9 @@ Exported Name:-
 	- After importing a package, you can refer to the names it exports (meaning variables, methods and functions that are available from outside of the package).
 	- a name is exported if it begins with a CAPITAL LETTER. Else, it is not exported.
 	- Any "unexported" names are not accessible from outside the package.
+	
+Important:
+	- Packages in Go are organized into folders, with one package per folder. 
+	- Go has no concept of subpackages, which means 
+		nested packages (in nested folders) exist only for aesthetic or informational reasons but do not inherit any functionality or visibility from super packages.
 */
